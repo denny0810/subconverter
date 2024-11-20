@@ -20,9 +20,9 @@ common:
   loon_rule_base: base/all_base.tpl
   sssub_rule_base: base/all_base.tpl
   singbox_rule_base: base/all_base.tpl
-  proxy_config: SYSTEM
-  proxy_ruleset: SYSTEM
-  proxy_subscription: NONE
+  proxy_config: socks5://192.168.1.2:7893
+  proxy_ruleset: socks5://192.168.1.2:7893
+  proxy_subscription: socks5://192.168.1.2:7893
   append_proxy_type: false
   reload_conf_on_request: false
 
