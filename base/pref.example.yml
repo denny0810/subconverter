@@ -24,7 +24,7 @@ common:
   proxy_ruleset: http://127.0.0.1:7893
   proxy_subscription: http://127.0.0.1:7893
   append_proxy_type: false
-  reload_conf_on_request: false
+  reload_conf_on_request: true
 
 userinfo:
   stream_rule: 
