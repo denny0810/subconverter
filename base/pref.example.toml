@@ -80,7 +80,7 @@ proxy_subscription = "http://127.0.0.1:7893"
 append_proxy_type = false
 
 # When requesting /sub, reload this config file first.
-reload_conf_on_request = false
+reload_conf_on_request = true
 
 [[userinfo.stream_rule]]
 # Rules to extract stream data from node
@@ -158,7 +158,7 @@ write_managed_config = true
 managed_config_prefix = "http://127.0.0.1:25500"
 
 # Managed config update interval in seconds, determine how long the config will be updated.
-config_update_interval = 86400
+config_update_interval = 21600
 
 # If config_update_strict is set to true, Surge will require a force update after the interval.
 config_update_strict = false
