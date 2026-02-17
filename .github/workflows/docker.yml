@@ -10,7 +10,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  REGISTRY_IMAGE: asdlokj1qpi23/subconverter
+  REGISTRY_IMAGE: denny0810/subconverter
 
 jobs:
   build:
@@ -19,12 +19,12 @@ jobs:
         include:
           - platform: linux/amd64
             os: ubuntu-latest
-          - platform: linux/386
-            os: ubuntu-latest
-          - platform: linux/arm/v7
-            os: ubuntu-latest
-          - platform: linux/arm64
-            os: ubuntu-latest
+          # - platform: linux/386
+          #   os: ubuntu-latest
+          # - platform: linux/arm/v7
+          #   os: ubuntu-latest
+          # - platform: linux/arm64
+          #   os: ubuntu-latest
     runs-on: ${{ matrix.os }}
     name: Build ${{ matrix.platform }} Image
     steps:
