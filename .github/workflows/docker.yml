@@ -1,9 +1,10 @@
 name: Publish Docker Image
 on: 
-  push:
-    branches: [ master ]
-    tags:
-      - '**'
+  # push:
+  #   branches: [ master ]
+  #   tags:
+  #     - '**'
+  workflow_dispatch:  # 触发手动事件
 
 concurrency: 
   group: ${{ github.ref }}-${{ github.workflow }}
